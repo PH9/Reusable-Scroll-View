@@ -2,7 +2,7 @@ import UIKit
 
 class ViewController: UITableViewController {
 
-    let sampleViews = ["StackView", "Container", "TableView",]
+    let sampleViews = ["ScrollView", "StackView", "Container", "TableView",]
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return sampleViews.count
@@ -17,7 +17,7 @@ class ViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc: UIViewController
-        if indexPath.row < 2 {
+        if indexPath.row < 3 {
             vc = UIViewController.fromStoryboardName(sampleViews[indexPath.row])
         } else {
             vc = TableViewController()
