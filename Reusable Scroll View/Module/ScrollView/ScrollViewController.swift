@@ -1,3 +1,5 @@
 import UIKit
 
-class ScrollViewController: UIViewController { }
+class ScrollViewController: UIViewController {
+    @IBOutlet weak var submitButton: SubmitButton!
+}
