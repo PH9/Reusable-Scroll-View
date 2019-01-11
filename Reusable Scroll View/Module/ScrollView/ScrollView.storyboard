@@ -20,7 +20,7 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Dy-Hg-sTo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="UuI-cO-JPv">
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="UuI-cO-JPv">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="607"/>
                                     </stackView>
                                 </subviews>

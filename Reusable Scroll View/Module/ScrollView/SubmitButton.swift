@@ -45,6 +45,7 @@ class SubmitButton: UIView {
     private func setupView() {
         addSubview(button)
         button.layer.cornerRadius = 4.0
+        button.addTarget(self, action: #selector(submitButtonClicked(_:)), for: .touchUpInside)
     }
 
     private func updateView() {
@@ -64,7 +65,7 @@ class SubmitButton: UIView {
             height: bounds.maxY - doubleSize)
     }
 
-    @IBAction func submitButtonClicked(_ sender: Any) {
+    @objc func submitButtonClicked(_ sender: Any) {
         delegate?.didSubmitButtonClicked()
     }
 }
