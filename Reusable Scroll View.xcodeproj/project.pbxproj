@@ -26,6 +26,8 @@
 		6583D57321E8F93A0077F813 /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6583D57221E8F93A0077F813 /* TableView.storyboard */; };
 		65B6DE7521E8FC3B002D7CBB /* Container.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 65B6DE7421E8FC3B002D7CBB /* Container.storyboard */; };
 		65B6DE7B21E8FCCC002D7CBB /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6DE7A21E8FCCC002D7CBB /* ContainerViewController.swift */; };
+		65B6DE7F21E90217002D7CBB /* SubmitButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6DE7D21E90217002D7CBB /* SubmitButtonCell.swift */; };
+		65B6DE8021E90217002D7CBB /* SubmitButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 65B6DE7E21E90217002D7CBB /* SubmitButtonCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		6583D57221E8F93A0077F813 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
 		65B6DE7421E8FC3B002D7CBB /* Container.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Container.storyboard; sourceTree = "<group>"; };
 		65B6DE7A21E8FCCC002D7CBB /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		65B6DE7D21E90217002D7CBB /* SubmitButtonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButtonCell.swift; sourceTree = "<group>"; };
+		65B6DE7E21E90217002D7CBB /* SubmitButtonCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubmitButtonCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,8 +183,18 @@
 				65B6DE7621E8FC43002D7CBB /* Container */,
 				6583D54C21E8DE9F0077F813 /* StackView */,
 				6583D56721E8F1030077F813 /* TableView */,
+				65B6DE7C21E901FA002D7CBB /* TableView2 */,
 			);
 			path = Module;
+			sourceTree = "<group>";
+		};
+		65B6DE7C21E901FA002D7CBB /* TableView2 */ = {
+			isa = PBXGroup;
+			children = (
+				65B6DE7D21E90217002D7CBB /* SubmitButtonCell.swift */,
+				65B6DE7E21E90217002D7CBB /* SubmitButtonCell.xib */,
+			);
+			path = TableView2;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +283,7 @@
 				6583D52921E8CCC70077F813 /* LaunchScreen.storyboard in Resources */,
 				6583D52621E8CCC70077F813 /* Assets.xcassets in Resources */,
 				6583D56F21E8F2B50077F813 /* Main.storyboard in Resources */,
+				65B6DE8021E90217002D7CBB /* SubmitButtonCell.xib in Resources */,
 				6583D56921E8F1DE0077F813 /* QuotationHeader.xib in Resources */,
 				65B6DE7521E8FC3B002D7CBB /* Container.storyboard in Resources */,
 				6583D52421E8CCC50077F813 /* StackView.storyboard in Resources */,
@@ -289,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B6DE7F21E90217002D7CBB /* SubmitButtonCell.swift in Sources */,
 				6583D56B21E8F2260077F813 /* QuotationHeader.swift in Sources */,
 				6583D56621E8E6DC0077F813 /* CreditCard.swift in Sources */,
 				65B6DE7B21E8FCCC002D7CBB /* ContainerViewController.swift in Sources */,
