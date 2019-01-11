@@ -1,5 +1,6 @@
 import UIKit
 
+@IBDesignable
 class CreditCardForm: UIStackView {
 
     @IBOutlet weak var nameOnCardTextField: UITextField!
