@@ -43,6 +43,9 @@
                                         <state key="normal" title="NEXT">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="nextButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yfP-X4-ldH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -57,20 +60,35 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3V-qu-nYL">
                                 <rect key="frame" x="0.0" y="64" width="375" height="539"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Kv-dc-AHc">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z66-L3-Sd4">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="200" id="Evw-Zn-UMg"/>
+                                            <constraint firstAttribute="height" constant="200" id="XqX-qV-Iip"/>
                                         </constraints>
                                     </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="NrD-mH-Luj">
+                                        <rect key="frame" x="10" y="210" width="355" height="0.0"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SUw-O9-wwf">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="0.0"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" id="t6j-OY-wWK"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="8Kv-dc-AHc" secondAttribute="trailing" id="M1e-7n-IrE"/>
-                                    <constraint firstItem="8Kv-dc-AHc" firstAttribute="leading" secondItem="J3V-qu-nYL" secondAttribute="leading" id="NKb-3a-pN5"/>
-                                    <constraint firstItem="8Kv-dc-AHc" firstAttribute="top" secondItem="J3V-qu-nYL" secondAttribute="top" id="aac-hJ-Zy6"/>
-                                    <constraint firstAttribute="bottom" secondItem="8Kv-dc-AHc" secondAttribute="bottom" id="rg0-1k-d5Z"/>
-                                    <constraint firstItem="8Kv-dc-AHc" firstAttribute="centerX" secondItem="J3V-qu-nYL" secondAttribute="centerX" id="wAq-OM-eh5"/>
+                                    <constraint firstItem="z66-L3-Sd4" firstAttribute="top" secondItem="J3V-qu-nYL" secondAttribute="top" id="FDX-Q6-PxB"/>
+                                    <constraint firstItem="NrD-mH-Luj" firstAttribute="leading" secondItem="J3V-qu-nYL" secondAttribute="leading" constant="10" id="HN6-Zt-y8r"/>
+                                    <constraint firstItem="z66-L3-Sd4" firstAttribute="centerX" secondItem="J3V-qu-nYL" secondAttribute="centerX" id="PYQ-xg-ECR"/>
+                                    <constraint firstAttribute="bottom" secondItem="NrD-mH-Luj" secondAttribute="bottom" id="eih-vX-dFm"/>
+                                    <constraint firstAttribute="trailing" secondItem="z66-L3-Sd4" secondAttribute="trailing" id="fsN-B1-8Tk"/>
+                                    <constraint firstItem="z66-L3-Sd4" firstAttribute="leading" secondItem="J3V-qu-nYL" secondAttribute="leading" id="j3F-Si-gnr"/>
+                                    <constraint firstItem="NrD-mH-Luj" firstAttribute="top" secondItem="z66-L3-Sd4" secondAttribute="bottom" constant="10" id="nkw-tx-s3t"/>
+                                    <constraint firstAttribute="trailing" secondItem="NrD-mH-Luj" secondAttribute="trailing" constant="10" id="wEv-JS-HgB"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -78,6 +96,7 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sr4-lG-6ZW" secondAttribute="trailing" id="8Jx-OX-fas"/>
                             <constraint firstItem="sr4-lG-6ZW" firstAttribute="top" secondItem="J3V-qu-nYL" secondAttribute="bottom" id="Kfh-bg-wAA"/>
+                            <constraint firstItem="J3V-qu-nYL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Pqe-bt-Zt4"/>
                             <constraint firstItem="J3V-qu-nYL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SVO-M1-obY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sr4-lG-6ZW" secondAttribute="bottom" id="gLj-v7-YGH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J3V-qu-nYL" secondAttribute="trailing" id="j1P-nD-Mmb"/>
@@ -87,9 +106,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Page Title" id="MCw-sI-X1T"/>
+                    <connections>
+                        <outlet property="contentView" destination="NrD-mH-Luj" id="Xr5-my-aro"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="6" y="134"/>
         </scene>
     </scenes>
 </document>
