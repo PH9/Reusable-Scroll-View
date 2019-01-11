@@ -6,4 +6,10 @@ class ScrollViewControllerTests: TestCase {
     override func setUp() {
         super.setUp()
     }
+
+    func test_viewController() {
+        let vc: ScrollViewController = ScrollViewController.fromStoryboard()
+
+        
+    }
 }

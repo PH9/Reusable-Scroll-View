@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6530A87B21E92D28002E5B51 /* TraitController.swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6530A87A21E92D28002E5B51 /* TraitController.swift.swift */; };
 		6573622721E928D40068CB59 /* ScrollViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */; };
 		6573622921E928F00068CB59 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6573622821E928F00068CB59 /* TestCase.swift */; };
 		6583D51F21E8CCC50077F813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583D51E21E8CCC50077F813 /* AppDelegate.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6530A87A21E92D28002E5B51 /* TraitController.swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TraitController.swift.swift; sourceTree = "<group>"; };
 		6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewControllerTests.swift; sourceTree = "<group>"; };
 		6573622821E928F00068CB59 /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		6583D51B21E8CCC50077F813 /* Reusable Scroll View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reusable Scroll View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6530A87921E92D19002E5B51 /* TestHelper */ = {
+			isa = PBXGroup;
+			children = (
+				6573622821E928F00068CB59 /* TestCase.swift */,
+				6530A87A21E92D28002E5B51 /* TraitController.swift.swift */,
+			);
+			path = TestHelper;
+			sourceTree = "<group>";
+		};
 		6583D51221E8CCC50077F813 = {
 			isa = PBXGroup;
 			children = (
@@ -158,8 +169,8 @@
 		6583D55F21E8E65F0077F813 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				6530A87921E92D19002E5B51 /* TestHelper */,
 				6583D56021E8E6820077F813 /* Nib.swift */,
-				6573622821E928F00068CB59 /* TestCase.swift */,
 				6583D56221E8E6BF0077F813 /* TextField.swift */,
 			);
 			path = Library;
@@ -410,6 +421,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6530A87B21E92D28002E5B51 /* TraitController.swift.swift in Sources */,
 				6573622721E928D40068CB59 /* ScrollViewControllerTests.swift in Sources */,
 				6573622921E928F00068CB59 /* TestCase.swift in Sources */,
 			);
