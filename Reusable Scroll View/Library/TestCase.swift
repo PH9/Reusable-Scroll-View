@@ -1,4 +1,6 @@
 import XCTest
+import FBSnapshotTestCase
 
-class TestCase: XCTestCase {
+class TestCase: FBSnapshotTestCase {
+
 }

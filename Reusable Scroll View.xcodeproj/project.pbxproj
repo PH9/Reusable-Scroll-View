@@ -263,6 +263,7 @@
 				6583D52B21E8CCC70077F813 /* Sources */,
 				6583D52C21E8CCC70077F813 /* Frameworks */,
 				6583D52D21E8CCC70077F813 /* Resources */,
+				6530A87821E92C0F002E5B51 /* carthage copy-frameworks */,
 			);
 			buildRules = (
 			);
@@ -341,6 +342,26 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6530A87821E92C0F002E5B51 /* carthage copy-frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/FBSnapshotTestCase.framework",
+			);
+			name = "carthage copy-frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/FBSnapshotTestCase.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
 		65A6AE8921E91EAA00E3031E /* carthage copy-frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
