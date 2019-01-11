@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6573622521E928BD0068CB59 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573622421E928BD0068CB59 /* FBSnapshotTestCase.framework */; };
+		6573622721E928D40068CB59 /* ScrollViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */; };
+		6573622921E928F00068CB59 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6573622821E928F00068CB59 /* TestCase.swift */; };
 		6583D51F21E8CCC50077F813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583D51E21E8CCC50077F813 /* AppDelegate.swift */; };
 		6583D52121E8CCC50077F813 /* StackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583D52021E8CCC50077F813 /* StackViewController.swift */; };
 		6583D52421E8CCC50077F813 /* StackView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6583D52221E8CCC50077F813 /* StackView.storyboard */; };
 		6583D52621E8CCC70077F813 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6583D52521E8CCC70077F813 /* Assets.xcassets */; };
 		6583D52921E8CCC70077F813 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6583D52721E8CCC70077F813 /* LaunchScreen.storyboard */; };
-		6583D53421E8CCC70077F813 /* Reusable_Scroll_ViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583D53321E8CCC70077F813 /* Reusable_Scroll_ViewTests.swift */; };
 		6583D54221E8D0F50077F813 /* CreditCardForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583D54021E8D0F50077F813 /* CreditCardForm.swift */; };
 		6583D54721E8D2650077F813 /* CreditCardForm.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6583D54621E8D2650077F813 /* CreditCardForm.xib */; };
 		6583D56121E8E6820077F813 /* Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583D56021E8E6820077F813 /* Nib.swift */; };
@@ -47,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6573622421E928BD0068CB59 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
+		6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewControllerTests.swift; sourceTree = "<group>"; };
+		6573622821E928F00068CB59 /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		6583D51B21E8CCC50077F813 /* Reusable Scroll View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reusable Scroll View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6583D51E21E8CCC50077F813 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6583D52021E8CCC50077F813 /* StackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +60,6 @@
 		6583D52821E8CCC70077F813 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6583D52A21E8CCC70077F813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6583D52F21E8CCC70077F813 /* Reusable Scroll ViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Reusable Scroll ViewTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6583D53321E8CCC70077F813 /* Reusable_Scroll_ViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable_Scroll_ViewTests.swift; sourceTree = "<group>"; };
 		6583D53521E8CCC70077F813 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6583D54021E8D0F50077F813 /* CreditCardForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardForm.swift; sourceTree = "<group>"; };
 		6583D54621E8D2650077F813 /* CreditCardForm.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CreditCardForm.xib; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6573622521E928BD0068CB59 /* FBSnapshotTestCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +143,6 @@
 		6583D53221E8CCC70077F813 /* Reusable Scroll ViewTests */ = {
 			isa = PBXGroup;
 			children = (
-				6583D53321E8CCC70077F813 /* Reusable_Scroll_ViewTests.swift */,
 				6583D53521E8CCC70077F813 /* Info.plist */,
 			);
 			path = "Reusable Scroll ViewTests";
@@ -159,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				6583D56021E8E6820077F813 /* Nib.swift */,
+				6573622821E928F00068CB59 /* TestCase.swift */,
 				6583D56221E8E6BF0077F813 /* TextField.swift */,
 			);
 			path = Library;
@@ -186,6 +191,7 @@
 		65A6AE8421E91E6400E3031E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6573622421E928BD0068CB59 /* FBSnapshotTestCase.framework */,
 				65A6AE8721E91E7300E3031E /* IQKeyboardManagerSwift.framework */,
 				65A6AE8521E91E6400E3031E /* IQKeyboardManagerSwift.framework.dSYM */,
 			);
@@ -230,6 +236,7 @@
 				65BDBAD821E90A71002B1F24 /* SubmitButton.swift */,
 				65A6AE8A21E923D200E3031E /* VeryLongContent.swift */,
 				65A6AE8C21E923DD00E3031E /* VeryLongContent.xib */,
+				6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
@@ -388,7 +395,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6583D53421E8CCC70077F813 /* Reusable_Scroll_ViewTests.swift in Sources */,
+				6573622721E928D40068CB59 /* ScrollViewControllerTests.swift in Sources */,
+				6573622921E928F00068CB59 /* TestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +596,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Reusable Scroll ViewTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -608,6 +620,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = "Reusable Scroll ViewTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
