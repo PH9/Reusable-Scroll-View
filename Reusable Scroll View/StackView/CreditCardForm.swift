@@ -15,26 +15,3 @@ class CreditCardForm: UIStackView {
             securityCode: securityCodeTextField.string)
     }
 }
-
-struct CreditCard {
-    let name: String
-    let number: String
-    let expiry: String
-    let securityCode: String
-}
-
-extension UITextField {
-    var string: String {
-        return text ?? ""
-    }
-}
-
-protocol NibProtocol {
-    static var nib: UINib { get }
-}
-
-extension UIView {
-    class func fromNib<T: UIView>() -> T {
-        return Bundle.main.loadNibNamed(String(describing: T.self), owner: nil, options: nil)![0] as! T
-    }
-}
