@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6573622521E928BD0068CB59 /* FBSnapshotTestCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6573622421E928BD0068CB59 /* FBSnapshotTestCase.framework */; };
 		6573622721E928D40068CB59 /* ScrollViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */; };
 		6573622921E928F00068CB59 /* TestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6573622821E928F00068CB59 /* TestCase.swift */; };
 		6583D51F21E8CCC50077F813 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6583D51E21E8CCC50077F813 /* AppDelegate.swift */; };
@@ -49,7 +48,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		6573622421E928BD0068CB59 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSnapshotTestCase.framework; path = Carthage/Build/iOS/FBSnapshotTestCase.framework; sourceTree = "<group>"; };
 		6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewControllerTests.swift; sourceTree = "<group>"; };
 		6573622821E928F00068CB59 /* TestCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCase.swift; sourceTree = "<group>"; };
 		6583D51B21E8CCC50077F813 /* Reusable Scroll View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Reusable Scroll View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,7 +70,6 @@
 		6583D56E21E8F2B50077F813 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		6583D57021E8F2D80077F813 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		6583D57221E8F93A0077F813 /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
-		65A6AE8521E91E6400E3031E /* IQKeyboardManagerSwift.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = IQKeyboardManagerSwift.framework.dSYM; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework.dSYM; sourceTree = "<group>"; };
 		65A6AE8721E91E7300E3031E /* IQKeyboardManagerSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IQKeyboardManagerSwift.framework; path = Carthage/Build/iOS/IQKeyboardManagerSwift.framework; sourceTree = "<group>"; };
 		65A6AE8A21E923D200E3031E /* VeryLongContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VeryLongContent.swift; sourceTree = "<group>"; };
 		65A6AE8C21E923DD00E3031E /* VeryLongContent.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VeryLongContent.xib; sourceTree = "<group>"; };
@@ -98,7 +95,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6573622521E928BD0068CB59 /* FBSnapshotTestCase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,9 +187,7 @@
 		65A6AE8421E91E6400E3031E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6573622421E928BD0068CB59 /* FBSnapshotTestCase.framework */,
 				65A6AE8721E91E7300E3031E /* IQKeyboardManagerSwift.framework */,
-				65A6AE8521E91E6400E3031E /* IQKeyboardManagerSwift.framework.dSYM */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -233,10 +227,10 @@
 			children = (
 				65BDBADC21E90C8A002B1F24 /* ScrollView.storyboard */,
 				65BDBADE21E90CA4002B1F24 /* ScrollViewController.swift */,
+				6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */,
 				65BDBAD821E90A71002B1F24 /* SubmitButton.swift */,
 				65A6AE8A21E923D200E3031E /* VeryLongContent.swift */,
 				65A6AE8C21E923DD00E3031E /* VeryLongContent.xib */,
-				6573622621E928D40068CB59 /* ScrollViewControllerTests.swift */,
 			);
 			path = ScrollView;
 			sourceTree = "<group>";
