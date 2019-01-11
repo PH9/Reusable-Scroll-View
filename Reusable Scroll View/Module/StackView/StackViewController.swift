@@ -1,6 +1,6 @@
 import UIKit
 
-class ViewController: UIViewController {
+class StackViewController: UIViewController {
 
     @IBOutlet weak var contentView: UIStackView!
 
@@ -20,4 +20,3 @@ class ViewController: UIViewController {
         print(creditCardView.getCreditCard())
     }
 }
-
