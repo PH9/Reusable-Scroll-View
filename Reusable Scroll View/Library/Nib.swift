@@ -2,17 +2,18 @@ import UIKit
 
 extension UIViewController {
     class func fromStoryboardName(_ name: String) -> UIViewController {
-        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let storyboard = UIStoryboard(name: name, bundle: .framework)
         return storyboard.instantiateInitialViewController()!
     }
 
     class func fromStoryboard<T: UIViewController>(name: String) -> T {
-        let storyboard = UIStoryboard(name: name, bundle: nil)
+        let storyboard = UIStoryboard(name: name, bundle: .framework)
         return storyboard.instantiateInitialViewController()! as! T
     }
 
     class func fromStoryboard<T: UIViewController>() -> T {
-        let storyboard = UIStoryboard(name: String(describing: T.self), bundle: nil)
+        let name = String(describing: T.self)
+        let storyboard = UIStoryboard(name: name, bundle: .framework)
         return storyboard.instantiateInitialViewController()! as! T
     }
 }
@@ -25,6 +26,6 @@ extension UIView {
 
 extension Bundle {
     static var framework: Bundle {
-        return Bundle(for: self)
+        return Bundle(for: AppDelegate.self)
     }
 }

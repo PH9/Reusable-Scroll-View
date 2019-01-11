@@ -10,7 +10,7 @@ class ScrollViewController: UIViewController {
     @IBOutlet weak var stackView: UIStackView!
     @IBOutlet weak var submitButton: SubmitButton!
 
-    private var method: PaymentMethod = .creditCard {
+    var paymentMethod: PaymentMethod = .creditCard {
         didSet {
             setupPaymentMethod()
         }
@@ -35,7 +35,7 @@ class ScrollViewController: UIViewController {
             currentView.removeFromSuperview()
         }
 
-        switch method {
+        switch paymentMethod {
         case .creditCard:
             stackView.addArrangedSubview(creditCardView)
             currentView = creditCardView
@@ -49,13 +49,13 @@ class ScrollViewController: UIViewController {
     }
 
     @IBAction func changePaymentMethod(_ sender: Any) {
-        switch method {
+        switch paymentMethod {
         case .creditCard:
-            method = .cash
+            paymentMethod = .cash
         case .cash:
-            method = .promptPay
+            paymentMethod = .promptPay
         case .promptPay:
-            method = .creditCard
+            paymentMethod = .creditCard
         }
     }
 }

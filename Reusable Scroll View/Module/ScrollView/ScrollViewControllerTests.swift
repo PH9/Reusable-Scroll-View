@@ -3,13 +3,36 @@ import XCTest
 
 class ScrollViewControllerTests: TestCase {
 
-    override func setUp() {
-        super.setUp()
+    func testDefault() {
+        Device.allCases.forEach { (device) in
+            let vc: ScrollViewController = ScrollViewController.fromStoryboard(name: "ScrollView")
+            XCTAssertEqual(PaymentMethod.creditCard, vc.paymentMethod)
+
+            let (parent, _) = traitControllers(device: device, child: vc)
+
+            FBSnapshotVerifyView(parent.view, identifier: "\(device)")
+        }
     }
 
-    func test_viewController() {
-        let vc: ScrollViewController = ScrollViewController.fromStoryboard()
+    func testVeryLong() {
+        Device.allCases.forEach { (device) in
+            let vc: ScrollViewController = ScrollViewController.fromStoryboard(name: "ScrollView")
 
-        
+            let (parent, _) = traitControllers(device: device, child: vc)
+            vc.paymentMethod = .cash
+
+            FBSnapshotVerifyView(parent.view, identifier: "\(device)")
+        }
+    }
+
+    func testS() {
+        Device.allCases.forEach { (device) in
+            let vc: ScrollViewController = ScrollViewController.fromStoryboard(name: "ScrollView")
+
+            let (parent, _) = traitControllers(device: device, child: vc)
+            vc.paymentMethod = .promptPay
+
+            FBSnapshotVerifyView(parent.view, identifier: "\(device)")
+        }
     }
 }
