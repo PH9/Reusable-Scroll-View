@@ -20,6 +20,7 @@ class ScrollViewControllerTests: TestCase {
 
             let (parent, _) = traitControllers(device: device, child: vc)
             vc.paymentMethod = .cash
+            parent.view.frame.size.height = 1000
 
             FBSnapshotVerifyView(parent.view, identifier: "\(device)")
         }
